@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 11:11:49 2022
+# Process ID: 12352
+# Current directory: D:/ProgrammingMonkey/COAD/lab3/booth/Booth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6168 D:\ProgrammingMonkey\COAD\lab3\booth\Booth\Booth.xpr
+# Log file: D:/ProgrammingMonkey/COAD/lab3/booth/Booth/vivado.log
+# Journal file: D:/ProgrammingMonkey/COAD/lab3/booth/Booth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ProgrammingMonkey/COAD/lab3/booth/Booth/Booth.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/ProgrammingMonkey/COAD/lab3/booth/testbench.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+run all
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
